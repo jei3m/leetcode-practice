@@ -4,7 +4,7 @@
  */
 var triangleType = function(nums) {
     [a,b,c] = nums; 
-//xd
+
     if (a + b > c && a + c > b && c + b > a ) {
         if (a == b && b==c) {
             return "equilateral"
