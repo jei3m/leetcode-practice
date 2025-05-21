@@ -14,16 +14,16 @@ var romanToInt = function(s) {
     }
 
     let res = 0;
-    for (let i = 0; i < s.length; i++){
+    for (let i = 0; i < s.length; i++) {
         let current = symbols[s[i]];
         let next = symbols[s[i + 1]];
-
         if (current < next) {
             res += next - current;
             i++
         } else {
             res += current;
         }
+        
     }
     return res;
 };
