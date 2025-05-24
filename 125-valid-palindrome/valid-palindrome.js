@@ -3,15 +3,9 @@
  * @return {boolean}
  */
 var isPalindrome = function(s) {
-    let reverseString = s.split(" ").join("").split("").reverse().join("").toLowerCase();
-    let joinedString = s.split(" ").join("").toLowerCase();
-
-    reverseString = reverseString.replace(/[^a-zA-Z0-9]/g, "");
-    joinedString = joinedString.replace(/[^a-zA-Z0-9]/g, "");
-
-    console.log(reverseString)
-
-    if (reverseString === joinedString) {
+    let reversed = s.split(" ").join("").split("").reverse().join("").replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
+    let notReversed = s.split(" ").join("").replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
+    if (reversed === notReversed) {
         return true;
     } else {
         return false;
