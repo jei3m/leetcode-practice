@@ -7,12 +7,11 @@ var triangleType = function(nums) {
     if (a + b > c && a + c > b && b + c > a) {
         if (a === b && b === c) {
             return "equilateral";
-        } else if (a === b || b === c || c === a) {
+        } else if (a === b || b === c || a === c) {
             return "isosceles";
         } else {
             return "scalene";
         }
-    } else {
-        return "none";
     }
+    return "none";
 };
