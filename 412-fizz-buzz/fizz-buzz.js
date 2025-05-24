@@ -3,19 +3,17 @@
  * @return {string[]}
  */
 var fizzBuzz = function(n) {
-    let arr = [];
-
+    let array = [];
     for (let i = 1; i <= n; i++) {
-        if (i % 3 == 0 && i % 5 === 0){
-            arr.push("FizzBuzz");
+        if (i % 3 === 0 && i % 5 === 0) {
+            array.push("FizzBuzz");
         } else if (i % 3 === 0) {
-            arr.push("Fizz");
+            array.push("Fizz");
         } else if (i % 5 === 0) {
-            arr.push("Buzz");
+            array.push("Buzz");
         } else {
-            arr.push(i.toString())
+            array.push(i.toString());
         }
     }
-
-    return arr;
+    return array;
 };
