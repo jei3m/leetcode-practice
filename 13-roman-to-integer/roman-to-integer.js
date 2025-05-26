@@ -11,18 +11,19 @@ var romanToInt = function(s) {
         'C': 100,
         'D': 500,
         'M': 1000
-    }
-    let res = 0
-    for (let i = 0; i < s.length; i++){
+    };
+    let result = 0
+    for (let i = 0; i < s.length; i++) {
         let current = symbols[s[i]];
         let next = symbols[s[i + 1]];
-        
+
         if (current < next) {
-            res += next - current;
-            i++
+            result += next - current;
+            i++;
         } else {
-            res += current;
+            result += current;
         }
+
     }
-    return res;
+    return result;
 };
