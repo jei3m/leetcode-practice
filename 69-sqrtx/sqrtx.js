@@ -3,5 +3,6 @@
  * @return {number}
  */
 var mySqrt = function(x) {
-    return Math.floor(Math.sqrt(x));
+    let squareRoot = Math.sqrt(x);
+    return Math.floor(squareRoot);
 };
