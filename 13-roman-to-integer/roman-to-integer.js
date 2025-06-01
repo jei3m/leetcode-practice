@@ -13,16 +13,17 @@ var romanToInt = function(s) {
         'M': 1000
     };
     let result = 0;
-    for ( let i = 0; i < s.length; i++) {
+    for (let i = 0; i < s.length; i++){
         let current = symbols[s[i]];
         let next = symbols[s[i + 1]];
 
         if (current < next) {
             result += next - current;
-            i++;
-        } else (
-            result += current
-        )
+            i++
+        } else {
+            result += current;
+        }
+
     }
     return result;
 };
