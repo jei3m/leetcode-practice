@@ -5,9 +5,7 @@
 var createCounter = function(n) {
     
     return function() {
-        for (let i = n; i <= n; i++) {
-            return n++
-        }
+        return n++;
     };
 };
 
