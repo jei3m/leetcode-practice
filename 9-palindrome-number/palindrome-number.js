@@ -3,8 +3,8 @@
  * @return {boolean}
  */
 var isPalindrome = function(x) {
-    let reversed = x.toString().split("").reverse().join("");
-    let string = x.toString().split("").join("");
+    string = x.toString();
+    reversed = string.split("").reverse().join("");
 
     if (reversed === string ) {
         return true;
