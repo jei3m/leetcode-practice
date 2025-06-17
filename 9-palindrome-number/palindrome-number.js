@@ -4,12 +4,10 @@
  */
 var isPalindrome = function(x) {
     string = x.toString();
-    reversed = string.split("").reverse().join("");
-
-    if (reversed === string ) {
+    let reverse = string.split("").reverse().join("");
+    if (reverse === string) {
         return true;
     } else {
         return false;
     }
-
 };
